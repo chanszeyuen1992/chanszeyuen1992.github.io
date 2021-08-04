@@ -1,0 +1,74 @@
+body{
+    background: rgb(44, 190, 93);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
+    
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0;
+    margin: 30px auto;
+    
+}
+
+p{
+    margin: 30px auto;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+    font-weight: 400;
+}
+#piano {
+    display: flex;
+    margin: 0 auto;
+}
+
+.w_key {
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    height: 300px;
+    width: 50px;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 3px solid black;
+    margin-left: 0px;
+}
+
+.b_key {
+    display: inline-block;
+    height: 150px;
+    width: 50px;
+    background: black;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 99;
+    color: rgb(253, 248, 241);
+}
+
+.nodes {
+    height: 30px;
+    margin-top: 230px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.b_nodes {
+    height: 30px;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.pressed {
+    background: rgb(252, 255, 61);
+}

@@ -1,0 +1,254 @@
+body{
+    background-color: rgb(146, 243, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+}
+
+p {
+    font-family: 'STIX Two Text', serif;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    
+    h2 {
+        font-size: 60px;
+    }
+}
+
+
+/* Navbar section */
+header {
+    width: 100%;
+}
+
+/* Navbar color */
+.nav-bg {
+    background-color: rgb(41, 84, 128);
+}
+
+.nav-link {
+    color: rgb(170, 221, 221);
+    font-size: 20px;
+}
+
+/* introduction Section */
+#intro{
+    width: 100%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./image/intro.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#intro h2{
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 690px) {
+    #intro {
+        width: 100%;
+        height:500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: snow;
+        background-image: url("./image/intro.png");
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.intro-bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 250, 250, 0.692);
+    border-radius: 30px;
+}
+
+
+/* Skill Section */
+#skills {
+    margin: 0 50px 50px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-container{
+    display: flex;
+    margin: 50px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-logo {
+        height: 50%;
+        width: 50%;
+        margin: 20px 15px;
+    }
+}
+
+.skills-logo {
+    height: 200px;
+    width: 200px;
+    margin: 20px 15px;
+}
+
+.works-img-container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Recent work Section */
+#works {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+#works h2{
+    margin-bottom: 50px;
+}
+
+.works-cards-container {
+    width:80%;
+    display: flex;
+    justify-items: center;
+}
+
+.works-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 15px;
+    max-width: 400px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .works-cards-container {
+        width:100%;
+    }
+    
+    .card {
+        
+        max-width: 600px;
+    }
+}
+
+.works-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 230px;
+}
+
+.card-body p{
+    height: 50px;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#contact h2{
+    margin: 80px 0 40px 0;
+}
+
+#contact a{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 80px;
+}
+
+
+/* Footer section */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: rgb(41, 84, 128);
+}
+
+#footer{
+    width: fit-content;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#footer a{
+    font-family: 'STIX Two Text', serif;
+    color: rgb(230, 220, 230);
+    margin: 10px;
+    font-size: 24px;
+}
+
+#footer h4{
+    color: whitesmoke;
+    margin-top: 10px;
+    font-family: 'STIX Two Text', serif;
+}
+
+#footer img {
+    width: 200px;
+    border: 10px solid rgb(248, 248, 248);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}

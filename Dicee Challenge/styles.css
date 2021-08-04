@@ -35,7 +35,15 @@ h1 {
   font-size: 8rem;
   color: #4ECCA3;
 }
-
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin: 10px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 3rem;
+    color: #4ECCA3;
+  }
+}
 p {
   font-size: 2rem;
   color: #4ECCA3;
@@ -44,6 +52,15 @@ p {
 
 img {
   width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 40%;
+  }
+  button {
+    width: 50%
+  }
 }
 
 footer {

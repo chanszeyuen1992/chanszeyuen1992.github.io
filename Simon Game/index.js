@@ -9,15 +9,18 @@ $("body").on('keydown', function(){
     if(!start){
         start = true;
         nextSequence();
+        $(".key").attr('style', 'visibility: hidden')
     }
 })
 
-$("#key").on('click', function(){
+$(".key").on('click', function(){
     if(!start){
         start = true;
         nextSequence();
+        $(".key").attr('style', 'visibility: hidden')
     }
 })
+
 
 //listening the buttons
 for ( let i = 0; i < buttonColors.length; i++){
@@ -57,7 +60,8 @@ function gameOver(){
     $("body").addClass("game-over");
     setTimeout(function(){ 
         $("body").removeClass("game-over")
-        $("h3").text("Press A Key to Start <br> <br><button id='key'>Start</button>")
+        $("h3").text('Press A Key to Start')
+        $(".key").removeAttr('style')
     }, 500)
     //Game Over Sound
     let wrong = new Audio('./sounds/wrong.mp3');
@@ -65,6 +69,8 @@ function gameOver(){
     
     
 }
+
+
 
 function nextSequence() {
     //Upgrade the lv and show it.

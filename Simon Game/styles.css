@@ -22,11 +22,36 @@ body {
   color: #fff6d1;
 }
 
+@media only screen and (max-width: 768px) {
+  #level-title1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin:  5%;
+    color: #fff6d1;
+  }
+  
+  
+  #level-title2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin:  5%;
+    color: #fff6d1;
+  }
+}
+
 #how {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
   margin:  5%;
   color: #fff6d1;
+}
+@media only screen and (max-width: 768px) {
+  #how {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin:  5%;
+    color: #fff6d1;
+  }
 }
 
 .container {
@@ -43,6 +68,17 @@ body {
   width: 200px;
   border: 0px solid black;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    margin: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 0px solid black;
+    border-radius: 50%;
+  }
 }
 
 .game-over {

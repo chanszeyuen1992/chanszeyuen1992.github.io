@@ -1,6 +1,9 @@
 body {
   text-align: center;
   background-color: #013f63;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .game-over {
@@ -74,6 +77,7 @@ body {
 
 /* Start Button */
 .key {
+  width: fit-content;
   font-size: 1rem;
   font-family: 'Press Start 2P', cursive;
   padding: 10px;

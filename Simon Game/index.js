@@ -12,6 +12,13 @@ $("body").on('keydown', function(){
     }
 })
 
+$("#key").on('click', function(){
+    if(!start){
+        start = true;
+        nextSequence();
+    }
+})
+
 //listening the buttons
 for ( let i = 0; i < buttonColors.length; i++){
     $("." + buttonColors[i]).click(function(){

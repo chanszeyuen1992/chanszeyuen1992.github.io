@@ -33,7 +33,9 @@ function updateDate(){
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=hongkong&units=metric&appid=631c6cff00ef11048ff8b2102fd50352"
     
 window.addEventListener("DOMContentLoaded", e => {
-    fetch(weatherURL)
+    fetch(weatherURL, {
+      method: 'POST'
+    })
     .then(res => {return res.json()})
     .then(data => renewDiv (data.main.temp, data.main.humidity, data.weather[0].icon))
 })

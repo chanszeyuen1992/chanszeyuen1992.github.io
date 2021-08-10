@@ -28,3 +28,18 @@ function updateDate(){
   document.getElementById("time-date").setAttribute("value", time.toString()); 
 }
 
+
+//fetch weather info
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=hongkong&units=metric&appid=631c6cff00ef11048ff8b2102fd50352"
+    
+window.addEventListener("DOMContentLoaded", e => {
+    fetch(weatherURL)
+    .then(res => {return res.json()})
+    .then(data => renewDiv (data.main.temp, data.main.humidity, data.weather[0].icon))
+})
+
+function renewDiv (temp, hum, icon){
+    document.querySelector("#temp").innerHTML = "Temperature: " + temp
+    document.querySelector("#humidity").innerHTML = "humidity: " + hum
+    document.querySelector("#weather-icon").setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png")
+}

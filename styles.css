@@ -258,10 +258,7 @@ footer{
     background-color: rgb(41, 84, 128);
 }
 
-.hidden {
-    display: none;
-    height: 0px;
-}
+
 
 #footer{
     width: fit-content;

@@ -15,7 +15,7 @@ form.addEventListener('submit', e => {
     
     
 function success(){
-    document.getElementById("my-form-status").innerHTML = "The information sent to Tony Chan sucessfully."
+    document.getElementById("my-form-status").innerHTML = "The information sent to Tony Chan successfully."
 }
 function reset(){
     document.getElementById("my-form").reset();

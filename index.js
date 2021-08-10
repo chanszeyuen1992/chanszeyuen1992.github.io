@@ -4,7 +4,7 @@ const form = document.forms['google-sheet']
 form.addEventListener('submit', e => {
   updateDate()
   e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  fetch(scriptURL, {method: 'POST', body: new FormData(form)})
     .then(
         (response) => console.log('Success!', response)
     )
